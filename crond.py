@@ -9,7 +9,7 @@ from email.Header import Header
 import threading
 import time
 
-__INTERVAL__ = 300 # Each round of attack time interval(second).
+__INTERVAL__ = 610 # Each round of attack time interval(second).
 
 '''
 发送邮件函数
