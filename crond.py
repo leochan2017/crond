@@ -19,8 +19,8 @@ __INTERVAL__ = 610 # Each round of attack time interval(second).
 def sendMail():
     mail_host = 'smtp.163.com'  # 设置服务器
     mail_port = '25'  # 服务器端口
-    mail_sender = 'xxxxxx@163.com'  # 发送用户名
-    mail_pass = 'xxxxxx'  # 发送密码 (163是授权码，不是密码)
+    mail_sender = 'pythonqweasd@163.com'  # 发送用户名
+    mail_pass = 'xxxx'  # 发送密码 (163是授权码，不是密码)
     mail_receivers = 'leochan2017@gmail.com'  # 接收邮箱
     Subject = '卧槽，Python进程又阻塞了'
     Content = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
@@ -66,6 +66,8 @@ class intervalFunction(object):
         if difference > 600:
             print '挂了呀'
             sendMail()
+            command = ''
+            os.system(command)
 
 
 if __name__ == '__main__':
